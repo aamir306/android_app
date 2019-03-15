@@ -5,18 +5,20 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity" android:background="#FFEE58">
+        tools:context=".MainActivity" android:background="@color/colorAccent">
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-        // Java: The Java folder contains the Java source code files. These files are used as a controller for controlled UI (Layout file). It gets the data from the Layout file and after processing that data output will be shown in the UI layout. It works on the backen    android:textSize="32sp"
-            android:textStyle="bold"
-            android:text="0"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" android:id="@+id/count_text"/>
+    // Java: The Java folder contains the Java source code files. These files are used as a controller for controlled UI
+    (Layout file). It gets the data from the Layout file and after processing that data output will be shown in the UI
+    layout. It works on the backen android:textSize="32sp"
+    android:textStyle="bold"
+    android:text="0"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent" android:id="@+id/count_text"/>
     <Button
             android:text="Toast"
             android:layout_width="wrap_content"
@@ -25,7 +27,7 @@
             android:onClick="toastMe"
             app:layout_constraintBottom_toBottomOf="@+id/count_button" app:layout_constraintStart_toStartOf="parent"
             android:background="@color/colorPrimary"
-            app:layout_constraintVertical_bias="0.548" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.0" app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toStartOf="@+id/count_button"
             app:layout_constraintTop_toTopOf="@+id/count_button"/>
     <Button
